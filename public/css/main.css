@@ -518,8 +518,19 @@ button {
   margin: 0px;
 }
 
-.mr-\[68px\] {
-  margin-right: 68px;
+.my-\[0\.67em\] {
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .ml-auto {
@@ -626,6 +637,10 @@ button {
   flex-basis: 100%;
 }
 
+.basis-230 {
+  flex-basis: 230px;
+}
+
 .basis-2\/4 {
   flex-basis: 50%;
 }
@@ -679,6 +694,10 @@ button {
   overflow: hidden;
 }
 
+.rounded-2\.2xl {
+  border-radius: 18px;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -702,6 +721,10 @@ button {
 .border-outline {
   --tw-border-opacity: 1;
   border-color: rgb(49 53 63 / var(--tw-border-opacity));
+}
+
+.bg-navigation {
+  background-color: rgba(0,46,255, 0.4);
 }
 
 .bg-\[url\(\'\.\.\/images\/icons\/icon-watchlist\.svg\'\)\] {
@@ -796,9 +819,15 @@ button {
   text-align: center;
 }
 
-.text-xl {
-  font-size: 24px;
-  line-height: 32px;
+.text-2\.5xl {
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 4px;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .text-sm {
@@ -827,13 +856,12 @@ button {
   text-transform: uppercase;
 }
 
-.tracking-normal {
-  letter-spacing: 0em;
+.leading-\[1\.15\] {
+  line-height: 1.15;
 }
 
-.text-outline {
-  --tw-text-opacity: 1;
-  color: rgb(49 53 63 / var(--tw-text-opacity));
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .text-white {

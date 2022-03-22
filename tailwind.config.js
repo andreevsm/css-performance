@@ -19,22 +19,22 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        'text-2.5xl': ['28px', {
+        '2.5xl': ['28px', {
           lineHeight: '28px',
           letterSpacing: '4px'
         }]
       },
       borderRadius: {
-        'rounded-2.2xl': '18px'
+        '2.2xl': '18px'
       },
       backgroundColor: {
-        'bg-navigation': 'rgba(0,46,255, 0.4)'
+        'navigation': 'rgba(0,46,255, 0.4)'
       },
       flexBasis: {
-        'basis-230': '230px'
+        '230': '230px'
       },
       paddingTop: {
-        'pt-100': '400px'
+        '100': '400px'
       },
       marginTop: {
         '10.25': '50px'
