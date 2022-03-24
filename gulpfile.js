@@ -4,7 +4,7 @@ const purgecss = require('gulp-purgecss')
 gulp.task('purgecss', () => {
   return gulp.src('css/*.css')
     .pipe(purgecss({
-      content: ['*.html']
+      content: ['public/index.html']
     }))
     .pipe(gulp.dest('public/css'))
 })
