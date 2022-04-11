@@ -1,10 +1,7 @@
 {
   "name": "demo-1-purgecss",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp:purgecss": "gulp purgecss"
   },
   "author": "",
