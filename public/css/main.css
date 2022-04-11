@@ -143,7 +143,7 @@
 
 .animate-none {
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 .cursor-default {
@@ -220,7 +220,7 @@
 }
 
 .bg-navigation {
-  background-color: rgba(0,46,255, 0.4);
+  background-color: rgba(0, 46, 255, 0.4);
 }
 
 .bg-\[url\(\'\.\.\/images\/icons\/icon-watchlist\.svg\'\)\] {
@@ -372,7 +372,7 @@
 
 .no-underline {
   -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .opacity-100 {
@@ -387,7 +387,7 @@
   --outline-color: #31353f;
   --horizontal-gap: 20px;
   --vertical-gap: 28px;
-  --font:'Open Sans', 'Arial', sans-serif;
+  --font: 'Open Sans', 'Arial', sans-serif;
   --font-size: 16px;
   --font-size-smaller: 14px;
   --font-size-bigger: 20px;
