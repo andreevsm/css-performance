@@ -2,7 +2,8 @@
   "name": "demo-2-tailwind",
   "version": "1.0.0",
   "scripts": {
-    "tailwindcss": "tailwindcss -i ./css/main.css -o ./public/css/main.css --watch"
+    "tailwindcss": "tailwindcss -i ./css/main.css -o ./public/css/main.css --watch",
+    "format": "prettier --write \"css/\" \"public/index.html\""
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "homepage": "https://github.com/andreevsm/css-performance#readme",
   "devDependencies": {
     "postcss": "8.4.12",
+    "prettier": "^2.6.2",
     "tailwindcss": "3.0.23"
   }
 }

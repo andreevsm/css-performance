@@ -1,264 +1,335 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <title>Cinemaddict</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-  <title>Cinemaddict</title>
-</head>
+  <body>
+    <header class="items-center box-border flex pb-[80px]">
+      <h1
+        class="mr-[68px] basis-[165px] grow-0 shrink-0 cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase"
+      >
+        Cinemaddict
+      </h1>
 
-<body>
-  <header class="items-center box-border flex pb-[80px]">
-    <h1
-      class="mr-[68px] basis-[165px] grow-0 shrink-0 cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase">
-      Cinemaddict</h1>
-
-    <section class="flex items-center ml-auto">
-      <p class="text-[20px]">Movie Buff</p>
-      <img class="block ml-[15px]" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
-    </section>
-  </header>
-
-  <main>
-    <nav
-      class="flex items-start justify-center font-extrabold text-[20px] border-solid border-0 border-b-2 border-b-[#31353f]">
-      <div class="flex items-start justify-center">
-        <a href="#all" class="mr-[130px] py-[28px] px-0 text-white text-[#ffe800]">
-          All movies
-        </a>
-        <a href="#watchlist" class="mr-[40px] py-[28px] px-0 text-white">
-          Watchlist
-          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">13</span>
-        </a>
-        <a href="#history" class="mr-[40px] py-[28px] px-0 text-white">
-          History
-          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">4</span>
-        </a>
-        <a href="#favorites" class="mr-[40px] py-[28px] px-0 text-white">
-          Favorites
-          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">8</span>
-        </a>
-      </div>
-      <a href="#stats" class="ml-auto py-[28px] px-0 text-white">Stats</a>
-    </nav>
-
-    <ul class="flex pl-0 list-none">
-      <li>
-        <a href="#"
-          class="block mr-[32px] p-0 text-[#ffe800] cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">
-          Sort by default
-        </a>
-      </li>
-      <li>
-        <a href="#"
-          class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">
-          Sort by date
-        </a>
-      </li>
-      <li><a href="#"
-          class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">
-          Sort by rating
-        </a>
-      </li>
-    </ul>
-
-    <section class="flex flex-wrap">
-      <section class="basis-full shrink-0 pb-[60px]">
-
-        <div class="items-baseline flex flex-wrap pb-[28px]">
-          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
-            <a class="hover:opacity-100">
-              <h3 class="inline font-bold mr-[0.5em]">The Dance of Life</h3>
-              <p class="inline font-bold text-[#7bc549]">8.3</p>
-              <p>
-                <span class="mr-[10px]">1929</span>
-                <span class="mr-[10px]">1h 55m</span>
-                <span class="mr-[10px]">Musical</span>
-              </p>
-              <img src="./images/posters/the-dance-of-life.jpg" alt=""
-                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]">
-              <p class="text-[14px] pr-[30px]">Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer
-                Bonny Lee King (Carroll), end up together on a cold, rainy night at a tr…</p>
-              <span
-                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">5
-                comments</span>
-            </a>
-            <div
-              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]">
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent]"
-                type="button">Add to
-                watchlist</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
-            <a class="hover:opacity-100">
-              <h3 class="inline font-bold mr-[0.5em]">Sagebrush Trail</h3>
-              <p class="inline font-bold text-[#7bc549]">3.2</p>
-              <p>
-                <span class="mr-[10px]">1933</span>
-                <span class="mr-[10px]">54m</span>
-                <span class="mr-[10px]">Western</span>
-              </p>
-              <img src="./images/posters/sagebrush-trail.jpg" alt=""
-                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]">
-              <p class="text-[14px] pr-[30px]">Sentenced for a murder he did not commit, John Brant escapes from prison
-                determined to find the real killer. By chance Brant's narrow escap…</p>
-              <span
-                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">
-                89 comments
-              </span>
-            </a>
-            <div
-              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]">
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist-active.svg')] bg-[transparent]"
-                type="button">Add to
-                watchlist</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
-            <a class="hover:opacity-100">
-              <h3 class="inline font-bold mr-[0.5em]">The Man with the Golden Arm</h3>
-              <p class="inline font-bold text-[#7bc549]">9.0</p>
-              <p>
-                <span class="mr-[10px]">1955</span>
-                <span class="mr-[10px]">1h 59m</span>
-                <span class="mr-[10px]">Drama</span>
-              </p>
-              <img src="./images/posters/the-man-with-the-golden-arm.jpg" alt=""
-                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]">
-              <p class="text-[14px] pr-[30px]">Frankie Machine (Frank Sinatra) is released from the federal Narcotic
-                Farm in Lexington, Kentucky with a set of drums and a new outlook on…</p>
-              <span
-                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">18
-                comments</span>
-            </a>
-            <div
-              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]">
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Add to
-                watchlist</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched-active.svg')] bg-[transparent]"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
-            <a class="hover:opacity-100">
-              <h3 class="inline font-bold mr-[0.5em]">Santa Claus Conquers the Martians</h3>
-              <p class="inline font-bold text-[#7bc549]">2.3</p>
-              <p>
-                <span class="mr-[10px]">1964</span>
-                <span class="mr-[10px]">1h 21m</span>
-                <span class="mr-[10px]">Comedy</span>
-              </p>
-              <img src="./images/posters/santa-claus-conquers-the-martians.jpg" alt=""
-                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]">
-              <p class="text-[14px] pr-[30px]">The Martians Momar ("Mom Martian") and Kimar ("King Martian") are
-                worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…</p>
-              <span
-                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">465
-                comments</span>
-            </a>
-            <div
-              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]">
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Add to
-                watchlist</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite-active.svg')] bg-[transparent]"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
-            <a class="hover:opacity-100">
-              <h3 class="inline font-bold mr-[0.5em]">Popeye the Sailor Meets Sindbad the Sailor</h3>
-              <p class="inline font-bold text-[#7bc549]">6.3</p>
-              <p>
-                <span class="mr-[10px]">1936</span>
-                <span class="mr-[10px]">16m</span>
-                <span class="mr-[10px]">Cartoon</span>
-              </p>
-              <img src="./images/posters/popeye-meets-sinbad.png" alt=""
-                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]">
-              <p class="text-[14px] pr-[30px]">In this short, Sindbad the Sailor (presumably Bluto playing a "role")
-                proclaims himself, in song, to be the greatest sailor, adventurer and…</p>
-              <span
-                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">0
-                comments</span>
-            </a>
-            <div
-              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]">
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist-active.svg')] bg-[transparent]"
-                type="button">Add to
-                watchlist</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched-active.svg')] bg-[transparent]"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite-active.svg')] bg-[transparent]"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-        </div>
-
-        <button
-          class="hover:opacity-70 w-full opacity-100 h-[60px] text-[14px] text-white box-border rounded border border-solid border-[#31353f] transition-opacity ease-in duration-100 bg-[transparent]">
-          Show more
-        </button>
+      <section class="flex items-center ml-auto">
+        <p class="text-[20px]">Movie Buff</p>
+        <img class="block ml-[15px]" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35" />
       </section>
-    </section>
-  </main>
+    </header>
 
+    <main>
+      <nav
+        class="flex items-start justify-center font-extrabold text-[20px] border-solid border-0 border-b-2 border-b-[#31353f]"
+      >
+        <div class="flex items-start justify-center">
+          <a href="#all" class="mr-[130px] py-[28px] px-0 text-white text-[#ffe800]"> All movies </a>
+          <a href="#watchlist" class="mr-[40px] py-[28px] px-0 text-white">
+            Watchlist
+            <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">13</span>
+          </a>
+          <a href="#history" class="mr-[40px] py-[28px] px-0 text-white">
+            History
+            <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">4</span>
+          </a>
+          <a href="#favorites" class="mr-[40px] py-[28px] px-0 text-white">
+            Favorites
+            <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">8</span>
+          </a>
+        </div>
+        <a href="#stats" class="ml-auto py-[28px] px-0 text-white">Stats</a>
+      </nav>
 
-  <footer class="items-center flex h-[100px] bg-[url('../images/background.png')] bg-no-repeat bg-top">
-    <section
-      class="mr-auto cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase animate-none text-[16px] tracking-[normal]">
-      Cinemaddict</section>
-    <section>
-      <p>130 291 movies inside</p>
-    </section>
-  </footer>
+      <ul class="flex pl-0 list-none">
+        <li>
+          <a
+            href="#"
+            class="block mr-[32px] p-0 text-[#ffe800] cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70"
+          >
+            Sort by default
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70"
+          >
+            Sort by date
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70"
+          >
+            Sort by rating
+          </a>
+        </li>
+      </ul>
 
-</body>
+      <section class="flex flex-wrap">
+        <section class="basis-full shrink-0 pb-[60px]">
+          <div class="items-baseline flex flex-wrap pb-[28px]">
+            <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
+              <a class="hover:opacity-100">
+                <h3 class="inline font-bold mr-[0.5em]">The Dance of Life</h3>
+                <p class="inline font-bold text-[#7bc549]">8.3</p>
+                <p>
+                  <span class="mr-[10px]">1929</span>
+                  <span class="mr-[10px]">1h 55m</span>
+                  <span class="mr-[10px]">Musical</span>
+                </p>
+                <img
+                  src="./images/posters/the-dance-of-life.jpg"
+                  alt=""
+                  class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]"
+                />
+                <p class="text-[14px] pr-[30px]">
+                  Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer Bonny Lee King (Carroll), end up
+                  together on a cold, rainy night at a tr…
+                </p>
+                <span
+                  class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out"
+                  >5 comments</span
+                >
+              </a>
+              <div
+                class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]"
+              >
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Add to watchlist
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as watched
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as favorite
+                </button>
+              </div>
+            </article>
 
+            <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
+              <a class="hover:opacity-100">
+                <h3 class="inline font-bold mr-[0.5em]">Sagebrush Trail</h3>
+                <p class="inline font-bold text-[#7bc549]">3.2</p>
+                <p>
+                  <span class="mr-[10px]">1933</span>
+                  <span class="mr-[10px]">54m</span>
+                  <span class="mr-[10px]">Western</span>
+                </p>
+                <img
+                  src="./images/posters/sagebrush-trail.jpg"
+                  alt=""
+                  class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]"
+                />
+                <p class="text-[14px] pr-[30px]">
+                  Sentenced for a murder he did not commit, John Brant escapes from prison determined to find the real
+                  killer. By chance Brant's narrow escap…
+                </p>
+                <span
+                  class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out"
+                >
+                  89 comments
+                </span>
+              </a>
+              <div
+                class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]"
+              >
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Add to watchlist
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as watched
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as favorite
+                </button>
+              </div>
+            </article>
+
+            <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
+              <a class="hover:opacity-100">
+                <h3 class="inline font-bold mr-[0.5em]">The Man with the Golden Arm</h3>
+                <p class="inline font-bold text-[#7bc549]">9.0</p>
+                <p>
+                  <span class="mr-[10px]">1955</span>
+                  <span class="mr-[10px]">1h 59m</span>
+                  <span class="mr-[10px]">Drama</span>
+                </p>
+                <img
+                  src="./images/posters/the-man-with-the-golden-arm.jpg"
+                  alt=""
+                  class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]"
+                />
+                <p class="text-[14px] pr-[30px]">
+                  Frankie Machine (Frank Sinatra) is released from the federal Narcotic Farm in Lexington, Kentucky with
+                  a set of drums and a new outlook on…
+                </p>
+                <span
+                  class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out"
+                  >18 comments</span
+                >
+              </a>
+              <div
+                class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]"
+              >
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Add to watchlist
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Mark as watched
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as favorite
+                </button>
+              </div>
+            </article>
+
+            <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
+              <a class="hover:opacity-100">
+                <h3 class="inline font-bold mr-[0.5em]">Santa Claus Conquers the Martians</h3>
+                <p class="inline font-bold text-[#7bc549]">2.3</p>
+                <p>
+                  <span class="mr-[10px]">1964</span>
+                  <span class="mr-[10px]">1h 21m</span>
+                  <span class="mr-[10px]">Comedy</span>
+                </p>
+                <img
+                  src="./images/posters/santa-claus-conquers-the-martians.jpg"
+                  alt=""
+                  class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]"
+                />
+                <p class="text-[14px] pr-[30px]">
+                  The Martians Momar ("Mom Martian") and Kimar ("King Martian") are worried that their children Girmar
+                  ("Girl Martian") and Bomar ("Boy Marti…
+                </p>
+                <span
+                  class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out"
+                  >465 comments</span
+                >
+              </a>
+              <div
+                class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]"
+              >
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Add to watchlist
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
+                  type="button"
+                >
+                  Mark as watched
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Mark as favorite
+                </button>
+              </div>
+            </article>
+
+            <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px]">
+              <a class="hover:opacity-100">
+                <h3 class="inline font-bold mr-[0.5em]">Popeye the Sailor Meets Sindbad the Sailor</h3>
+                <p class="inline font-bold text-[#7bc549]">6.3</p>
+                <p>
+                  <span class="mr-[10px]">1936</span>
+                  <span class="mr-[10px]">16m</span>
+                  <span class="mr-[10px]">Cartoon</span>
+                </p>
+                <img
+                  src="./images/posters/popeye-meets-sinbad.png"
+                  alt=""
+                  class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out bottom-[calc(100%-340px)]"
+                />
+                <p class="text-[14px] pr-[30px]">
+                  In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to
+                  be the greatest sailor, adventurer and…
+                </p>
+                <span
+                  class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out"
+                  >0 comments</span
+                >
+              </a>
+              <div
+                class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] bottom-[calc(100%-340px-50px)]"
+              >
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Add to watchlist
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Mark as watched
+                </button>
+                <button
+                  class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite-active.svg')] bg-[transparent]"
+                  type="button"
+                >
+                  Mark as favorite
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button
+            class="hover:opacity-70 w-full opacity-100 h-[60px] text-[14px] text-white box-border rounded border border-solid border-[#31353f] transition-opacity ease-in duration-100 bg-[transparent]"
+          >
+            Show more
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <footer class="items-center flex h-[100px] bg-[url('../images/background.png')] bg-no-repeat bg-top">
+      <section
+        class="mr-auto cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase animate-none text-[16px] tracking-[normal]"
+      >
+        Cinemaddict
+      </section>
+      <section>
+        <p>130 291 movies inside</p>
+      </section>
+    </footer>
+  </body>
 </html>
