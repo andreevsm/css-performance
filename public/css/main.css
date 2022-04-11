@@ -242,8 +242,8 @@
   background-color: transparent;
 }
 
-.bg-\[url\(\'\.\.\/images\/icons\/icon-watchlist-active\.svg\'\)\] {
-  background-image: url('../images/icons/icon-watchlist-active.svg');
+.bg-\[url\(\'\.\.\/images\/icons\/icon-watchlist\.svg\'\)\] {
+  background-image: url('../images/icons/icon-watchlist.svg');
 }
 
 .bg-\[url\(\'\.\.\/images\/icons\/icon-watched\.svg\'\)\] {
@@ -252,6 +252,18 @@
 
 .bg-\[url\(\'\.\.\/images\/icons\/icon-favorite\.svg\'\)\] {
   background-image: url('../images/icons/icon-favorite.svg');
+}
+
+.bg-\[url\(\'\.\.\/images\/icons\/icon-watchlist-active\.svg\'\)\] {
+  background-image: url('../images/icons/icon-watchlist-active.svg');
+}
+
+.bg-\[url\(\'\.\.\/images\/icons\/icon-watched-active\.svg\'\)\] {
+  background-image: url('../images/icons/icon-watched-active.svg');
+}
+
+.bg-\[url\(\'\.\.\/images\/icons\/icon-favorite-active\.svg\'\)\] {
+  background-image: url('../images/icons/icon-favorite-active.svg');
 }
 
 .bg-\[url\(\'\.\.\/images\/background\.png\'\)\] {
@@ -456,17 +468,10 @@
 
 :root {
   --text-color: #fff;
-  --text-color-active: #ffe800;
-  --text-color-good: #7bc549;
-  --text-color-average: #e49a27;
-  --text-color-poor: red;
-  --outline-color: #31353f;
   --horizontal-gap: 20px;
   --vertical-gap: 28px;
   --font: 'Open Sans', 'Arial', sans-serif;
   --font-size: 16px;
-  --font-size-smaller: 14px;
-  --font-size-bigger: 20px;
 }
 
 @font-face {
@@ -531,33 +536,6 @@ a:hover {
 
 button {
   cursor: pointer;
-}
-
-.films-list--extra {
-  box-sizing: border-box;
-  flex-basis: 50%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding-bottom: 0;
-}
-
-.films-list--extra:last-of-type {
-  position: relative;
-}
-
-.films-list--extra:last-of-type::before {
-  border-left: solid 1px var(--outline-color);
-  bottom: 20px;
-  content: '';
-  height: calc(100% - 20px * 2);
-  left: calc(-1 * var(--horizontal-gap) * 1.5);
-  position: absolute;
-  top: 20px;
-  width: 0;
-}
-
-.films-list--extra .films-list__container {
-  padding: var(--vertical-gap) 40px;
 }
 
 .hover\:opacity-70:hover {
