@@ -6,100 +6,90 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/base.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
   <title>Cinemaddict</title>
 </head>
 
 <body>
-  <header class="flex pb-[80px] box-border items-center">
+  <header class="items-center box-border flex pb-[80px]">
     <h1
-      class="text-2.5xl leading-[1.15] my-[0.67em] mx-0 basis-[165px] grow-0 shrink-0 cursor-default font-bold	text-center	uppercase text-2.5xl">
-      Cinemaddict
-    </h1>
+      class="mr-[68px] basis-[165px] grow-0 shrink-0 cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase">
+      Cinemaddict</h1>
 
     <section class="flex items-center ml-auto">
-      <p class="my-5 text-lg">Movie Buff</p>
-      <img class="block ml-3.5" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
+      <p class="text-[20px]">Movie Buff</p>
+      <img class="block ml-[15px]" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
     </section>
   </header>
 
   <main>
-    <nav class="flex items-start justify-center font-extrabold border-solid border-b-2 text-outlinetext-xl">
+    <nav
+      class="flex items-start justify-center font-extrabold text-[20px] border-solid border-0 border-b-2 border-b-[#31353f]">
       <div class="flex items-start justify-center">
-        <a href="#all" class="text-white py-7 px-0 mr-[130px] color-active">
+        <a href="#all" class="mr-[130px] py-[28px] px-0 text-white text-[#ffe800]">
           All movies
         </a>
-        <a href="#watchlist" class="text-white py-7 px-0 mr-10">
+        <a href="#watchlist" class="mr-[40px] py-[28px] px-0 text-white">
           Watchlist
-          <span class="font-medium rounded-2.2xl py-0 px-2.5 w-[1em] bg-navigation">13</span>
+          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">13</span>
         </a>
-        <a href="#history" class="text-white py-7 px-0 mr-10">
+        <a href="#history" class="mr-[40px] py-[28px] px-0 text-white">
           History
-          <span class="font-medium rounded-2.2xl py-0 px-2.5 w-[1em] bg-navigation">4</span>
+          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">4</span>
         </a>
-        <a href="#favorites" class="text-white py-7 px-0 mr-10">
+        <a href="#favorites" class="mr-[40px] py-[28px] px-0 text-white">
           Favorites
-          <span class="font-medium rounded-2.2xl py-0 px-2.5 w-[1em] bg-navigation">8</span>
+          <span class="w-[1em] py-0 px-[10px] font-medium rounded-[18px] bg-[#002eff66]">8</span>
         </a>
       </div>
-      <a href="#stats" class="ml-auto text-white py-7 px-0">Stats</a>
+      <a href="#stats" class="ml-auto py-[28px] px-0 text-white">Stats</a>
     </nav>
 
     <ul class="flex pl-0 list-none">
-      <li>
-        <a href="#"
-          class="block p-0 no-underline bg-transparent border-0 outline-0 cursor-pointer text-white hover:opacity-70 mr-8 color-active">
-          Sort
-          by default
-        </a>
-      </li>
-      <li>
-        <a href="#"
-          class="block p-0 no-underline bg-transparent border-0 outline-0 cursor-pointer text-white hover:opacity-70 mr-8">Sort
-          by date
-        </a>
-      </li>
-      <li>
-        <a href="#"
-          class="block p-0 no-underline bg-transparent border-0 outline-0 cursor-pointer text-white hover:opacity-70 mr-8">Sort
-          by rating
-        </a>
-      </li>
+      <li><a href="#"
+          class="block mr-[32px] p-0 text-[#ffe800] cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">Sort
+          by default</a></li>
+      <li><a href="#"
+          class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">Sort
+          by date</a></li>
+      <li><a href="#"
+          class="block mr-[32px] p-0 text-white cursor-pointer underline bg-transparent border-0 outline-0 hover:opacity-70">Sort
+          by rating</a></li>
     </ul>
 
     <section class="flex flex-wrap">
-      <section class="shrink-0 basis-full pb-15">
-        <div class="flex flex-wrap items-baseline pb-7">
+      <section class="basis-full shrink-0 pb-[60px]">
 
-          <article class="shrink-0 grow-0	relative mr-2.5 mt-10.25 basis-230 pt-100">
+        <div class="items-baseline flex flex-wrap pb-[28px]">
+          <article class="mt-[50px] basis-[230px] shrink-0 grow-0 mr-[10px] relative pt-[400px] film-card">
             <a class="hover:opacity-100">
               <h3 class="inline font-bold mr-[0.5em]">The Dance of Life</h3>
-              <p class="inline font-bold text-good">8.3</p>
+              <p class="inline font-bold text-[#7bc549]">8.3</p>
               <p>
-                <span class="mr-2.5">1929</span>
-                <span class="mr-2.5">1h 55m</span>
-                <span class="mr-2.5">Musical</span>
+                <span class="mr-[10px]">1929</span>
+                <span class="mr-[10px]">1h 55m</span>
+                <span class="mr-[10px]">Musical</span>
               </p>
               <img src="./images/posters/the-dance-of-life.jpg" alt=""
-                class="overflow-hidden absolute	w-full rounded z-[1] h-[340px]">
-              <p class="text-sm pr-[30px]">
-                Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer
+                class="border-dotted border border-[#ffffff1a] z-[1] rounded w-full absolute overflow-hidden h-[340px] transition-[bottom] duration-200 ease-out film-card__poster">
+              <p class="text-[14px] pr-[30px]">Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer
                 Bonny Lee King (Carroll), end up together on a cold, rainy night at a tr…</p>
-              <span class="border-0 pointer m-0 opacity-100 hover:opacity-70 p-0">5 comments</span>
+              <span
+                class="hover:opacity-70 border-0 text-[#687fad] cursor-pointer text-[16px] m-0 opacity-100 p-0 transition-opacity duration-100 ease-out">5
+                comments</span>
             </a>
-            <div class="flex h-0 absolute overflow-hidden justify-between items-end	w-full py-2.5 px-0 h-[50px]">
+            <div
+              class="h-[50px] items-end flex justify-between overflow-hidden absolute w-full transition-[height] duration-100 ease-in py-[10px] px-0 leading-[50px] film-card__controls">
               <button
-                class="bg-[url('../images/icons/icon-watchlist.svg')] active:bg-[url('../images/icons/icon-watchlist-active.svg')] bg-watchlist"
-                type="button">
-                Add to watchlist
-              </button>
+                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:17px_15px] bg-[url('../images/icons/icon-watchlist-active.svg')] bg-[transparent]"
+                type="button">Add to
+                watchlist</button>
               <button
-                class="bg-[url('../images/icons/icon-watched.svg')] active:bg-[url('../images/icons/icon-watched-active.svg')] bg-watched"
+                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-solid border-r border-r-[#31353f] bg-[length:14px_10px] bg-[url('../images/icons/icon-watched.svg')] bg-[transparent] hover:opacity-70"
                 type="button">Mark as
                 watched</button>
               <button
-                class="border-r-0 bg-[url('../images/icons/icon-favorite.svg')] active:bg-[url('../images/icons/icon-favorite-active.svg')] bg-favorite"
+                class="bg-transparent bg-no-repeat bg-center border-0 box-border basis-[33%] h-[30px] opacity-100 transition-opacity duration-100 ease-in indent-[-900em] border-r-0 bg-[length:18px_18px] bg-[url('../images/icons/icon-favorite.svg')] bg-[transparent] hover:opacity-70"
                 type="button">Mark as
                 favorite</button>
             </div>
@@ -107,156 +97,18 @@
         </div>
 
         <button
-          class="opacity-100 hover:opacity-70 w-full box-border rounded text-white border-solid border-1 border-outline h-[60px] text-sm">Show
-          more</button>
-      </section>
-
-      <section class="shrink-0 pb-15 pb-0 basis-2/4 grow-0 box-border relative">
-        <h2>Top rated</h2>
-
-        <div class="flex flex-wrap items-baseline py-7 px-10">
-          <article class="mr-2.5 basis-230 pt-100 mt-10.25">
-            <a>
-              <h3 class="mr-[0.5em]">The Man with the Golden Arm</h3>
-              <p class="text-good">9.0</p>
-              <p>
-                <span>1955</span>
-                <span>1h 59m</span>
-                <span>Drama</span>
-              </p>
-              <img src="./images/posters/the-man-with-the-golden-arm.jpg" alt="" class="h-[340px]">
-              <p class="text-sm pr-[30px]">
-                Frankie Machine (Frank Sinatra) is released from the federal Narcotic
-                Farm in Lexington, Kentucky with a set of drums and a new outlook on…</p>
-              <span>18 comments</span>
-            </a>
-            <div class="flex h-0 absolute overflow-hidden justify-between items-end	w-full py-2.5 px-0 h-[50px]">
-              <button
-                class="bg-[url('../images/icons/icon-watchlist.svg')] active:bg-[url('../images/icons/icon-watchlist-active.svg')] bg-watchlist"
-                type="button">
-                Add to watchlist
-              </button>
-              <button
-                class="bg-[url('../images/icons/icon-watched.svg')] active:bg-[url('../images/icons/icon-watched-active.svg')] bg-watched"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="border-r-0 bg-[url('../images/icons/icon-favorite.svg')] active:bg-[url('../images/icons/icon-favorite-active.svg')] bg-favorite"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mr-2.5 basis-230 pt-100 mt-10.25">
-            <a>
-              <h3 class="mr-[0.5em]">The Great Flamarion</h3>
-              <p class="text-good">8.9</p>
-              <p>
-                <span>1945</span>
-                <span>1h 18m</span>
-                <span>Mystery</span>
-              </p>
-              <img src="./images/posters/the-great-flamarion.jpg" alt="" class="h-[340px]">
-              <p class="text-sm pr-[30px]">
-                The film opens following a murder at a cabaret in Mexico City in 1936,
-                and then presents the events leading up to it in flashback. The Grea…</p>
-              <span>12 comments</span>
-            </a>
-            <div class="flex h-0 absolute overflow-hidden justify-between items-end	w-full py-2.5 px-0 h-[50px]">
-              <button
-                class="bg-[url('../images/icons/icon-watchlist.svg')] active:bg-[url('../images/icons/icon-watchlist-active.svg')] bg-watchlist"
-                type="button">
-                Add to watchlist
-              </button>
-              <button
-                class="bg-[url('../images/icons/icon-watched.svg')] active:bg-[url('../images/icons/icon-watched-active.svg')] bg-watched"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="border-r-0 bg-[url('../images/icons/icon-favorite.svg')] active:bg-[url('../images/icons/icon-favorite-active.svg')] bg-favorite"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="shrink-0 pb-15 pb-0 basis-2/4 grow-0 box-border">
-        <h2>Most commented</h2>
-
-        <div class="flex flex-wrap items-baseline py-7 px-10">
-          <article class="mr-2.5 basis-230 pt-100 mt-10.25">
-            <a>
-              <h3 class="mr-[0.5em]">Santa Claus Conquers the Martians</h3>
-              <p class="text-good">2.3</p>
-              <p>
-                <span>1964</span>
-                <span>1h 21m</span>
-                <span>Comedy</span>
-              </p>
-              <img src="./images/posters/santa-claus-conquers-the-martians.jpg" alt="" class="h-[340px]">
-              <p class="text-sm pr-[30px]">
-                The Martians Momar ("Mom Martian") and Kimar ("King Martian") are
-                worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…</p>
-              <span>465 comments</span>
-            </a>
-            <div class="flex h-0 absolute overflow-hidden justify-between items-end	w-full py-2.5 px-0 h-[50px]">
-              <button
-                class="bg-[url('../images/icons/icon-watchlist.svg')] active:bg-[url('../images/icons/icon-watchlist-active.svg')] bg-watchlist"
-                type="button">
-                Add to watchlist
-              </button>
-              <button
-                class="bg-[url('../images/icons/icon-watched.svg')] active:bg-[url('../images/icons/icon-watched-active.svg')] bg-watched"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="border-r-0 bg-[url('../images/icons/icon-favorite.svg')] active:bg-[url('../images/icons/icon-favorite-active.svg')] bg-favorite"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-
-          <article class="mr-2.5 basis-230 pt-100 mt-10.25">
-            <a>
-              <h3 class="mr-[0.5em]">Made for Each Other</h3>
-              <p class="text-good">5.8</p>
-              <p>
-                <span>1939</span>
-                <span>1h 32m</span>
-                <span>Comedy</span>
-              </p>
-              <img src="./images/posters/made-for-each-other.png" alt="" class="h-[340px]">
-              <p class="text-sm pr-[30px]">
-                John Mason (James Stewart) is a young, somewhat timid attorney in New
-                York City. He has been doing his job well, and he has a chance of bei…</p>
-              <span>56 comments</span>
-            </a>
-            <div class="flex h-0 absolute overflow-hidden justify-between items-end	w-full py-2.5 px-0 h-[50px]">
-              <button
-                class="bg-[url('../images/icons/icon-watchlist.svg')] active:bg-[url('../images/icons/icon-watchlist-active.svg')] bg-watchlist"
-                type="button">
-                Add to watchlist
-              </button>
-              <button
-                class="bg-[url('../images/icons/icon-watched.svg')] active:bg-[url('../images/icons/icon-watched-active.svg')] bg-watched"
-                type="button">Mark as
-                watched</button>
-              <button
-                class="border-r-0 bg-[url('../images/icons/icon-favorite.svg')] active:bg-[url('../images/icons/icon-favorite-active.svg')] bg-favorite"
-                type="button">Mark as
-                favorite</button>
-            </div>
-          </article>
-        </div>
+          class="hover:opacity-70 w-full opacity-100 h-[60px] text-[14px] text-white box-border rounded border border-solid border-[#31353f] transition-opacity ease-in duration-100 bg-[transparent]">
+          Show more
+        </button>
       </section>
     </section>
   </main>
 
 
-  <footer class="flex items-center h-[100px] bg-footer">
-    <section class="mr-auto cursor-default text-center uppercase animate-none tracking-normal text-base">Cinemaddict
-    </section>
+  <footer class="items-center flex h-[100px] bg-[url('../images/background.png')] bg-no-repeat bg-top">
+    <section
+      class="mr-auto cursor-default text-[28px] font-bold tracking-[4px] text-center uppercase animate-none text-[16px] tracking-[normal]">
+      Cinemaddict</section>
     <section>
       <p>130 291 movies inside</p>
     </section>

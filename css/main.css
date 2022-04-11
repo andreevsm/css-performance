@@ -1,6 +1,12 @@
 @tailwind utilities;
 
 :root {
+  --text-color: #fff;
+  --text-color-active: #ffe800;
+  --text-color-good: #7bc549;
+  --text-color-average: #e49a27;
+  --text-color-poor: red;
+
   --outline-color: #31353f;
 
   --horizontal-gap: 20px;
@@ -31,4 +37,77 @@
   font-style: normal;
   font-weight: 800;
   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('../fonts/OpenSans-ExtraBold.woff2') format('woff2');
+}
+
+html {
+  background: #121213 url('../images/background.png') no-repeat 60% 0;
+  display: flex;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  font-family: var(--font);
+  justify-content: center;
+  min-width: 1240px;
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 1240px;
+  padding: var(--vertical-gap) var(--horizontal-gap) 0;
+  width: 100%;
+}
+
+a:link {
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.1s ease-in;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.film-card__poster {
+  bottom: calc(100% - 340px - 50px);
+}
+
+.film-card__controls {
+  bottom: calc(100% - 340px - 50px);
+}
+
+.film-card .film-card__poster {
+  bottom: calc(100% - 340px);
+}
+
+.films-list--extra {
+  box-sizing: border-box;
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-bottom: 0;
+}
+
+.films-list--extra:last-of-type {
+  position: relative;
+}
+
+.films-list--extra:last-of-type::before {
+  border-left: solid 1px var(--outline-color);
+  bottom: 20px;
+  content: '';
+  height: calc(100% - 20px * 2);
+  left: calc(-1 * var(--horizontal-gap) * 1.5);
+  position: absolute;
+  top: 20px;
+  width: 0;
+}
+
+.films-list--extra .films-list__container {
+  padding: var(--vertical-gap) 40px;
 }
