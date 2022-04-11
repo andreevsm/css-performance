@@ -2,13 +2,15 @@
   "name": "demo-1-purgecss",
   "version": "1.0.0",
   "scripts": {
-    "gulp:purgecss": "gulp purgecss"
+    "gulp:purgecss": "gulp purgecss",
+    "format": "prettier --write \"css/\" \"public/index.html\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "4.1.3",
     "gulp": "^4.0.2",
-    "gulp-purgecss": "4.1.3"
+    "gulp-purgecss": "4.1.3",
+    "prettier": "^2.6.2"
   }
 }
