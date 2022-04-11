@@ -14,8 +14,6 @@
 
   --font: 'Open Sans', 'Arial', sans-serif;
   --font-size: 16px;
-  --font-size-smaller: 14px;
-  --font-size-bigger: 20px;
 }
 
 @font-face {
@@ -71,18 +69,6 @@ a:hover {
 
 button {
   cursor: pointer;
-}
-
-.film-card__poster {
-  bottom: calc(100% - 340px - 50px);
-}
-
-.film-card__controls {
-  bottom: calc(100% - 340px - 50px);
-}
-
-.film-card .film-card__poster {
-  bottom: calc(100% - 340px);
 }
 
 .films-list--extra {

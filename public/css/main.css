@@ -6,6 +6,14 @@
   position: relative;
 }
 
+.bottom-\[calc\(100\%-340px\)\] {
+  bottom: calc(100% - 340px);
+}
+
+.bottom-\[calc\(100\%-340px-50px\)\] {
+  bottom: calc(100% - 340px - 50px);
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -523,18 +531,6 @@ a:hover {
 
 button {
   cursor: pointer;
-}
-
-.film-card__poster {
-  bottom: calc(100% - 340px - 50px);
-}
-
-.film-card__controls {
-  bottom: calc(100% - 340px - 50px);
-}
-
-.film-card .film-card__poster {
-  bottom: calc(100% - 340px);
 }
 
 .films-list--extra {
